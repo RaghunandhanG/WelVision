@@ -1,0 +1,20 @@
+
+digraph G {
+    rankdir=LR;
+    node [shape=box, style=rounded];
+
+    Start [label="Start" shape=ellipse];
+    Upload [label="Upload Image Folder" shape=box];
+    Annotate [label="Click to Annotate" shape=box];
+    CreateDataset [label="Click to Create Dataset" shape=box];
+    Train [label="Click to Train" shape=box];
+    StopTraining [label="Click to Stop Training" shape=box];
+    End [label="End" shape=ellipse];
+
+    Start -> Upload;
+    Upload -> Annotate [label="Files Uploaded"];
+    Annotate -> CreateDataset [label="Annotation Completed"];
+    CreateDataset -> Train [label="Dataset Created"];
+    Train -> StopTraining [label="Training Started"];
+    StopTraining -> End [label="Training Stopped"];
+}

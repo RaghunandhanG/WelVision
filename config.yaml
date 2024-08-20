@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    Admin:
+      email: iqube
+      name: Admin
+      password: $2b$12$YfV.wDFpH2kYvVXfwTLQJ.4YVgjDW9I5uyPjJjVhF1/j8VMhAM5pO
+    Operator:
+      email: rbriggs@gmail.com
+      name: Operator
+      password: $2b$12$joyUJgtY0fZsvLLdf6Cwr.I9Iuui45MpWDAhIsw5nwaiZt.E1pyBS
+cookie:
+  expiry_days: 0
+  key: random_signature_key
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com
